@@ -104,6 +104,62 @@ class HormonalPage extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(
+            height: 35,
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => HormonalPage()));
+            },
+            child: Text(
+              'DETAILED ANALYSIS',
+              style: TextStyle(color: Color(0xFF3C449E)),
+            ),
+            style: ButtonStyle(
+              side: MaterialStateProperty.all(
+                BorderSide(color: Color(0xFF3C449E)),
+              ),
+              padding: MaterialStateProperty.all(
+                EdgeInsets.only(top: 5, bottom: 5),
+              ),
+              minimumSize: MaterialStateProperty.all(
+                  Size(MediaQuery.of(context).size.width - 100, 50)),
+              shape: MaterialStateProperty.all(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30.0),
+                ),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 15,
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => HormonalPage()));
+            },
+            child: Text(
+              'EXPLORE ALL FEATURES',
+              style: TextStyle(color: Colors.white),
+            ),
+            style: ButtonStyle(
+              padding: MaterialStateProperty.all(
+                EdgeInsets.only(top: 5, bottom: 5),
+              ),
+              minimumSize: MaterialStateProperty.all(
+                  Size(MediaQuery.of(context).size.width - 100, 50)),
+              backgroundColor: MaterialStateProperty.all(Color(0xFF3C449E)),
+              shape: MaterialStateProperty.all(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30.0),
+                ),
+              ),
+            ),
+          ),
+          Expanded(child: Container()),
+          Image.asset('assets/homebar.png'),
         ],
       ),
     );

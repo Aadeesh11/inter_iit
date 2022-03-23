@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inter_iit/3rdpage.dart';
 
 class StartPage extends StatelessWidget {
   const StartPage({Key? key}) : super(key: key);
@@ -65,7 +66,10 @@ class StartPage extends StatelessWidget {
             height: 15,
           ),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => HormonalPage()));
+            },
             child: Text(
               'GET PCOS TESTED',
               style: TextStyle(color: Colors.white),

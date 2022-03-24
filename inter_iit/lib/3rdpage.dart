@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inter_iit/4thpage.dart';
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 
 class HormonalPage extends StatelessWidget {
@@ -110,7 +111,7 @@ class HormonalPage extends StatelessWidget {
           TextButton(
             onPressed: () {
               Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (_) => HormonalPage()));
+                  .push(MaterialPageRoute(builder: (_) => DetailsPage()));
             },
             child: Text(
               'DETAILED ANALYSIS',
